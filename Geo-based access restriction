@@ -1,2 +1,17 @@
-# Overview: Read-only Admins should log in only from the USA IP address.
-# Solution
+# OVERVIEW: Read-only Admins should log in only from the USA IP address.
+
+# SOLUTION: 
+
+Network Zone:
+-> From your Okta Admin console navigate to Security > Networks > Create a Dynamic Zone, with the name "USA" by selecting United States as a country.
+
+Group:
+-> From Directory > Groups > Create a Group with the name "Read Admins"
+-> Add users to this group, for whom you want the access to be restricted from USA only.
+
+Global Session policy:
+-> Navigate to Security > Global session policies > Create a new policy with the name "USA Only" and assign the group "Read Admins".
+-> In the rule pane > Enter the name "USA access" > If the user's IP is select "Not in Zone" and enter the zone name you created earlier.
+-> Under then access is select "denied".
+
+This way when the users who are in the Read Admins group try to login to Okta, the IP is evaluated, and only USA IP will be allowed or else they will receive the 404 error.
