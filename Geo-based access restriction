@@ -3,7 +3,7 @@
 # SOLUTION: 
 
 Network Zone:
--> From your Okta Admin console navigate to Security > Networks > Create a Dynamic Zone, with the name "USA" by selecting United States as a country.
+-> From Okta Admin console navigate to Security > Networks > Create a Dynamic Zone, with the name "USA" by selecting United States as a country.
 
 Group:
 -> From Directory > Groups > Create a Group with the name "Read Admins"
