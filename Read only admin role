@@ -1,1 +1,7 @@
-# Read-only Admin role assignment
+#OVERVIEW: The business requirement is to have a group of users with Read-Only admin access to their Okta Org.
+
+#SOLUTION:
+-> Firstly, we have created a group with the name "Read Admins".
+-> From the Group profile click on > Admin Roles tab > Edit Group assignments.
+-> Under the drop-down search for the "Read-only Administrator" standard role, and click Save changes.
+Now all the members of the group will have Read-only admin permissions.
