@@ -1,4 +1,4 @@
-# OVERVIEW: Read-only Admins should log in only from the USA IP address.
+# OVERVIEW: Read-only Admin role login restricted only to the USA IP address.
 
 # SOLUTION: 
 
